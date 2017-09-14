@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-parent</artifactId>
-        <version>Brixton.BUILD-SNAPSHOT</version>
+        <version>Brixton.RELEASE</version>
         <relativePath/>
         <!-- lookup parent from repository -->
     </parent>
@@ -32,6 +32,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <docker.plugin.version>0.4.13</docker.plugin.version>
+        <springframework.cloud.version>Brixton.RELEASE</springframework.cloud.version>
     </properties>
 
     <dependencies>
@@ -55,7 +56,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-parent</artifactId>
-                <version>Brixton.BUILD-SNAPSHOT</version>
+                <version>${springframework.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
